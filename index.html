@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>JavaScript学习</title>
+<script>
+'use strict';
+
+var menu = document.getElementById('drink-menu'); //这里
+var drinks = document.getElementsByTagName('dt');　//这里
+var i, s, menu, drinks;
+
+menu = document.getElementById('drink-menu');
+menu.tagName; // 'DL'
+
+drinks = document.getElementsByTagName('dt');
+s = '提供的饮料有:';
+for (i=0; i&lt;drinks.length; i++) {
+    s = s + drinks[i].innerHTML + ',';
+}
+alert(s);
+
+
+</script>
+</head>
+<body>
+
+<dl id="drink-menu" style="border:solid 1px #ccc;padding:6px;">
+    <dt>摩卡</dt>
+    <dd>热摩卡咖啡</dd>
+    <dt>酸奶</dt>
+    <dd>北京老酸奶</dd>
+    <dt>果汁</dt>
+    <dd>鲜榨苹果汁</dd>
+</dl>
+
+</body>
+</html>
