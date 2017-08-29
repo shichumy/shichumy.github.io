@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>JavaScript</title>
-<script>
-'use strict';
-var menu = document.getElementById('drink-menu'); //ÕâÀï
-var drinks = document.getElementsByTagName('dt');¡¡//ÕâÀï
-var i, s, menu, drinks;
-menu = document.getElementById('drink-menu');
-menu.tagName; // 'DL'
-drinks = document.getElementsByTagName('dt');
-s = '菜单';
-for (i=0; i&lt;drinks.length; i++) {
-    s = s + drinks[i].innerHTML + ',';
-}
-alert(s);
-</script>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<title>shichumy学习</title>
+		<style>
+			h1
+			{
+				color:#CD5C5C;
+				text-align: center;
+				background-color:#87CEFA;
+				margin: 0;
+				padding: 0;
+			}
+			ul
+			{
+				list-style-type: none;
+				background-color:#87CEFA;
+				margin: 0;
+				padding: 0;
+			}
+			li
+			{
+				display:inline;
+			}
+			a:hover,a:active
+			{
+				
+				background-color:#00bfff;
+			}
+			a:link,a:visited
+			{
+				text-decoration:none;
+				
 
-<dl id="drink-menu" style="border:solid 1px #ccc;padding:6px;">
-    <dt>目录1</dt>
-    <dd>内容1</dd>
-    <dt>目录2</dt>
-    <dd>内容2</dd>
-    <dt>目录3</dt>
-    <dd>内容3</dd>
-</dl>
+			}
+		</style>
 
-</body>
+	</head>
+	<body>
+
+		<div id="container" style="background-color: #E0FFFF;height:900px;">
+			<div id="title">
+				<h1>我的学习笔记</h1>
+			</div>
+			<div id="guide">
+				<ul>
+					<li><a href="#HTML">HTML</a></li>
+					<li><a href="#CSS">CSS</a></li>
+					<li><a href="#JavaScript">JavaScript</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
