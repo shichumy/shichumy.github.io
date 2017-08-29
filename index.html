@@ -5,22 +5,17 @@
 <title>JavaScript</title>
 <script>
 'use strict';
-
 var menu = document.getElementById('drink-menu'); //ÕâÀï
 var drinks = document.getElementsByTagName('dt');¡¡//ÕâÀï
 var i, s, menu, drinks;
-
 menu = document.getElementById('drink-menu');
 menu.tagName; // 'DL'
-
 drinks = document.getElementsByTagName('dt');
 s = '菜单';
 for (i=0; i&lt;drinks.length; i++) {
     s = s + drinks[i].innerHTML + ',';
 }
 alert(s);
-
-
 </script>
 </head>
 <body>
